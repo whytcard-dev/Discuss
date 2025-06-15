@@ -1,95 +1,99 @@
-# 🚀 WhytCard AI Manager
+# WhytCard Discuss
 
-<div align="center">
-  
-![WhytCard AI Manager Logo](assets/images/logo.png)
+Bienvenue dans le dépôt WhytCard Discuss, une zone de discussion et de documentation pour le projet WhytCard, un logiciel open source en développement.
 
-### 🤖 Démocratiser l'IA pour tous
+[![Auto-Translate](https://github.com/whytcard-dev/Whytcard_discuss/actions/workflows/auto-translate.yml/badge.svg)](https://github.com/whytcard-dev/Whytcard_discuss/actions/workflows/auto-translate.yml)
+[![Setup Discussions](https://github.com/whytcard-dev/Whytcard_discuss/actions/workflows/discussions.yml/badge.svg)](https://github.com/whytcard-dev/Whytcard_discuss/actions/workflows/discussions.yml)
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge&color=4A90E2)](https://github.com/whytcard-dev/Discuss)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge&color=FF6B00)](LICENSE)
+## À propos
 
-</div>
+Ce dépôt sert de plateforme centrale pour :
+- La documentation multilingue du projet WhytCard
+- Les discussions communautaires
+- Le partage d'idées et de retours
 
----
+## Documentation multilingue
 
-## 🎯 Vision
+La documentation est disponible dans plusieurs langues :
 
-**WhytCard AI Manager** révolutionne l'accès à l'intelligence artificielle en offrant une plateforme complète, gratuite et open-source pour:
+- [Documentation en anglais](/EN/)
+- [Documentation en français](/FR/)
+- [Documentation en espagnol](/ES/)
+- [Documentation en allemand](/DE/)
+- [Documentation en chinois](/ZH/)
+- [Documentation en japonais](/JA/)
+- [Documentation en russe](/RU/)
+- [Et plus encore...](/Langues.md)
 
-- 🕷️ **Scraper** n'importe quelle source de données intelligemment
-- 🤖 **Entraîner** des modèles IA open-source
-- 📊 **Gérer** des datasets de qualité professionnelle
-- 🚀 **Déployer** des IA personnalisées en quelques clics
+Toutes les traductions sont générées automatiquement à partir des fichiers sources en anglais.
 
-## ✨ Fonctionnalités Principales
+## Système d'autotraduction
 
-### Design Moderne
-- Interface utilisateur intuitive
-- Dark mode par défaut
-- Expérience multi-plateforme (Windows, Mac, Linux)
+Ce dépôt intègre un système d'autotraduction qui traduit automatiquement tous les fichiers Markdown du répertoire `EN` vers plusieurs langues cibles.
 
-### Architecture Puissante
-- Backend performant
-- Base de données optimisée
-- Support de nombreux modèles d'IA
+### Comment ça fonctionne
 
-### Outils Avancés
-- Scraping intelligent avec analyse IA
-- Gestion et préparation de datasets
-- Entraînement simplifié de modèles
+1. Les fichiers sources en anglais sont stockés dans le répertoire `EN/`
+2. Lorsqu'un fichier est modifié ou ajouté dans `EN/`, il est automatiquement traduit
+3. Les traductions sont générées dans les répertoires correspondant à chaque langue (FR/, ES/, etc.)
+4. Les modifications sont automatiquement validées dans le dépôt
 
-## 📋 Roadmap
+### Installation locale
 
-Ce projet est en développement actif. Voici les principales étapes prévues:
+Pour installer et utiliser le système d'autotraduction localement :
 
-### Phase 1 - Foundation
-- [x] Architecture de base
-- [ ] Interface utilisateur principale
-- [ ] Scraping simple de pages web
+1. Clonez ce dépôt :
+   ```bash
+   git clone https://github.com/whytcard-dev/Whytcard_discuss.git
+   cd Whytcard_discuss
+   ```
 
-### Phase 2 - Core Features
-- [ ] Gestion complète des datasets
-- [ ] Support des modèles IA de base
-- [ ] Visualisation des données
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-### Phase 3 - Advanced
-- [ ] Scraping IA avancé
-- [ ] Fine-tuning optimisé
-- [ ] Marketplace de modèles
+3. Configurez l'API Google Cloud Translation :
+   - Créez un projet sur Google Cloud Console
+   - Activez l'API Cloud Translation
+   - Créez une clé de compte de service avec les permissions nécessaires
+   - Téléchargez le fichier JSON de clé
+   - Définissez la variable d'environnement `GOOGLE_APPLICATION_CREDENTIALS` :
+     ```bash
+     export GOOGLE_APPLICATION_CREDENTIALS="/chemin/vers/votre-fichier-cle.json"
+     ```
 
-## 💬 Discussions & Contributions
+### Script de mise à jour automatique
 
-Ce repository est dédié aux discussions, documentation et ressources publiques concernant WhytCard AI Manager.
+Un script unique a été créé pour mettre à jour le dépôt, traduire les fichiers et synchroniser avec GitHub :
 
-- 💡 **Proposer des idées**: Créez une issue avec le tag "enhancement"
-- 🐛 **Signaler des bugs**: Utilisez le tag "bug" dans les issues
-- 📚 **Documentation**: Les contributions à la documentation sont bienvenues
-- 🤝 **Communauté**: Partagez vos expériences et retours
+```bash
+npm run update
+```
 
-## 📚 Documentation
+Ce script effectue les actions suivantes :
+1. Met à jour les répertoires de langues
+2. Traduit tous les fichiers Markdown
+3. Optimise les fichiers pour GitHub
+4. Prépare les commits
 
-La documentation du projet est en cours de développement. Les sections disponibles incluent:
+## Discussions
 
-- Guide d'utilisation (à venir)
-- FAQ (à venir)
-- Tutoriels (à venir)
+Nous utilisons [GitHub Discussions](https://github.com/whytcard-dev/Whytcard_discuss/discussions) pour les conversations communautaires. N'hésitez pas à :
 
-## 📞 Contact
+- Poser des questions
+- Partager des idées
+- Discuter des fonctionnalités
+- Donner votre avis sur le projet
 
-Pour toute question ou suggestion:
+## Contribuer
 
-- **Email**: jerome@whytcard.dev
-- **GitHub**: [@whytcard-dev](https://github.com/whytcard-dev)
+Nous accueillons toutes les contributions ! Consultez notre [guide de contribution](.github/CONTRIBUTING.md) pour commencer.
 
-## 🔒 Licence
+## Code de conduite
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet adhère à un [code de conduite](.github/CODE_OF_CONDUCT.md). En participant, vous êtes tenu de respecter ce code.
 
----
+## Licence
 
-<div align="center">
-
-### 🔥 Ensemble, démocratisons l'IA !
-
-</div> 
+Ce projet est sous licence MIT. 
